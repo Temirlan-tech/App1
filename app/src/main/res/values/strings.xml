@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">App1</string>
+    <string name="app">Welcome to Geektech</string>
+    <string name="login">Введите логин</string>
+    <string name="password">Пароль</string>
+    <string name="button">Войти</string>
+    <string name="error1">Вы успешно вошли</string>
+    <string name="error2">Вы неверно ввели данные</string>
+
+    </resources>
