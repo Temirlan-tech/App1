@@ -35,14 +35,12 @@ public class MainActivity extends AppCompatActivity {
             String message2 = password.getText().toString().trim();
             if (message1.equals("Temirlan") && (message2.equals("230896"))){
                 Toast.makeText(this, "Успешно", Toast.LENGTH_SHORT).show();
-            } else if (message2.length() > 6){
-                Toast.makeText(this,"Вы ввели неправильный пароль",Toast.LENGTH_SHORT).show();
-            }else {
+            } else if (message1.equals("") && (message2.equals(""))){
                 Toast.makeText(this,"Вы ввели неправильные данные", Toast.LENGTH_SHORT).show();
-                login.setError("Вы ввели неправильные данные");
-                password.setError("Вы ввели неправильные данные");
             }
-
+            if (message2.length() > 6){
+                Toast.makeText(this, "Вы ввели неправильный пароль", Toast.LENGTH_SHORT).show();
+            }
         });
     }
 }
